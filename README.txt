@@ -1,4 +1,8 @@
-Please see the Yelp dataset used for this homework in attached folder
+README
+Please use below link to get the data
+https://drive.google.com/folderview?id=0B0vdRkcBHx41RmU5LXNEUmNXck0&usp=sharing
+In order to execute please change the path pointing to dataset accordingly
+
 Also attached the Output of executed queries
 Please see the questions in HW2 pdf file.
 
