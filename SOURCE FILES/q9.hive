@@ -1,0 +1,15 @@
+ADD JAR FORMAT_CAT_HIVE.jar;
+
+DROP TEMPORARY FUNCTION IF EXISTS FORMAT_CATEGORY;
+CREATE TEMPORARY FUNCTION FORMAT_CATEGORY as 'FORMAT_CAT_HIVE';
+
+DROP TABLE IF EXISTS Business;
+
+CREATE TABLE IF NOT EXISTS Business (review_id STRING,text STRING,business_id STRING,full_address STRING,schools STRING,longitude STRING,average_stars DOUBLE,date DATE, user_id STRING,
+open STRING, categories STRING, photo_url STRING, city STRING, review_count DOUBLE, name STRING, neighborhoods STRING, url STRING, votescool STRING, votesfunny STRING, state STRING, stars DOUBLE, latitude STRING,
+type STRING,votesuseful STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+LOAD DATA local INPATH '/usr/lib/hue/input/business2.csv' INTO TABLE Business;
+
+SELECT business_id, full_address, FORMAT_CATEGORY(categories) FROM Business
+LIMIT 10;

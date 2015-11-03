@@ -1,0 +1,19 @@
+DROP TABLE IF EXISTS Business;
+DROP TABLE IF EXISTS NewBusiness;
+
+CREATE TABLE IF NOT EXISTS Business (review_id STRING,text STRING,business_id STRING,full_address STRING,schools STRING,longitude STRING,average_stars DOUBLE,date DATE, user_id STRING,
+open STRING, categories STRING, photo_url STRING, city STRING, review_count DOUBLE, name STRING, neighborhoods STRING, url STRING, votescool STRING, votesfunny STRING, state STRING, stars DOUBLE, latitude STRING,
+type STRING,votesuseful STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+LOAD DATA local INPATH '/usr/lib/hue/input/business2.csv' INTO TABLE Business;
+
+CREATE TABLE IF NOT EXISTS NewBusiness (BUSINESS_ID STRING, FULL_ADDR STRING, CATG STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+INSERT OVERWRITE TABLE NewBusiness 
+SELECT business_id, full_address, categories
+FROM Business;
+
+SELECT BUSINESS_ID, CATG
+FROM NewBusiness 
+WHERE FULL_ADDR LIKE '%Stanford%';

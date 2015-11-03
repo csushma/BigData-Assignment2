@@ -1,0 +1,38 @@
+{cs6360:~} /usr/local/apache-cassandra-2.0.5/bin/cqlsh csac0
+
+1.) DROP KEYSPACE sxc149730;
+
+2.) CREATE KEYSPACE sxc149730
+WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };
+
+3.) USE sxc149730; 
+
+4.) CREATE TABLE business(
+review_id VARCHAR,text VARCHAR,business_id VARCHAR,
+full_address VARCHAR,schools VARCHAR,longitude VARCHAR,average_stars DOUBLE,dat VARCHAR, user_id VARCHAR,
+open VARCHAR, categories VARCHAR, photo_url VARCHAR, city VARCHAR, review_count DOUBLE, 
+name VARCHAR, neighborhoods VARCHAR, url VARCHAR, votescool VARCHAR, votesfunny VARCHAR, state VARCHAR, stars DOUBLE, latitude VARCHAR,
+type VARCHAR,votesuseful VARCHAR, PRIMARY KEY(business_id))WITH COMPACT STORAGE;
+
+5.) COPY sxc149730.business( review_id, text, business_id, full_address, schools, longitude, average_stars, dat, user_id, open, categories, photo_url, city, review_count, name, neighborhoods, url, votescool, votesfunny, state, stars, latitude, type, votesuseful)
+FROM 'business2.csv' 
+WITH DELIMITER = '^';
+
+OUTPUT: 78 rows imported in 0.238 seconds.
+
+6.) select * from business where business_id='axPZazfSZFnynOV52mbe2Q';
+
+OUTPUT:
+
+ business_id            | average_stars | categories                            | city     | dat | full_address | latitude  | longitude    | name   | neighborhoods | open | photo_url                                                                              | review_count | review_id | schools                 | stars | state | text | type     | url                                     | user_id | votescool | votesfunny | votesuseful
+------------------------+---------------+---------------------------------------+----------+-----+--------------+-----------+--------------+--------+---------------+------+----------------------------------------------------------------------------------------+--------------+-----------+-------------------------+-------+-------+------+----------+-----------------------------------------+---------+-----------+------------+-------------
+ axPZazfSZFnynOV52mbe2Q |           NaN | ['Hotels & Travel', 'Transportation'] | Stanford | NaN | Stanford, CA | 37.424106 | -122.1660756 | Zipcar |            [] | True | http://s3-media1.ak.yelpcdn.com/assets/2/www/img/924a6444ca6c/gfx/blank_biz_medium.gif |            5 |       NaN | ['Stanford University'] |   2.5 |    CA |  NaN | business | http://www.yelp.com/biz/zipcar-stanford |     NaN |       NaN |        NaN |         NaN
+
+(1 rows)
+
+
+7.) truncate sxc149730.business;
+
+
+
+8.) drop table business;

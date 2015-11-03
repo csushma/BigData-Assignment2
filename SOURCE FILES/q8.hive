@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS business_2013;
+DROP TABLE IF EXISTS business_2014;
+DROP TABLE IF EXISTS business_2015;
+
+CREATE TABLE IF NOT EXISTS business_2013 (business_id STRING,full_address STRING, longitude STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+CREATE TABLE IF NOT EXISTS business_2014 (business_id STRING,full_address STRING, longitude STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+CREATE TABLE IF NOT EXISTS business_2015 (business_id STRING,full_address STRING, longitude STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+FROM YearBusiness
+
+INSERT OVERWRITE TABLE business_2013
+SELECT business_id, full_address, longitude
+WHERE Year_Partition='2013'
+
+INSERT OVERWRITE TABLE business_2014
+SELECT business_id, full_address, longitude
+WHERE Year_Partition='2014'
+
+INSERT OVERWRITE TABLE business_2015
+SELECT business_id, full_address, longitude
+WHERE Year_Partition='2015';
+
+SELECT * FROM business_2013;
+SELECT * FROM business_2014;
+SELECT * FROM business_2015;

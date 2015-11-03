@@ -1,0 +1,11 @@
+DROP TABLE IF EXISTS YearBusiness;
+
+CREATE TABLE IF NOT EXISTS YearBusiness (review_id STRING,text STRING,business_id STRING,full_address STRING,schools STRING,longitude STRING,average_stars DOUBLE,date DATE, user_id STRING,
+open STRING, categories STRING, photo_url STRING, city STRING, review_count DOUBLE, name STRING, neighborhoods STRING, url STRING, votescool STRING, votesfunny STRING, state STRING, stars DOUBLE, latitude STRING,
+type STRING,votesuseful STRING) PARTITIONED BY (Year_Partition STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+LOAD DATA local INPATH '/usr/lib/hue/input/business2013.csv' INTO TABLE YearBusiness Partition (Year_Partition = '2013');
+LOAD DATA local INPATH '/usr/lib/hue/input/business2014.csv' INTO TABLE YearBusiness Partition (Year_Partition = '2014');
+LOAD DATA local INPATH '/usr/lib/hue/input/business2015.csv' INTO TABLE YearBusiness Partition (Year_Partition = '2015');
+
+SELECT * FROM YearBusiness WHERE Year_Partition='2015';

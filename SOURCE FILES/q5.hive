@@ -1,0 +1,45 @@
+DROP TABLE IF EXISTS Business;
+DROP TABLE IF EXISTS Review;
+DROP TABLE IF EXISTS NewBusiness;
+DROP TABLE IF EXISTS NewReview;
+DROP TABLE IF EXISTS JoinBusRev;
+
+CREATE TABLE IF NOT EXISTS Business (review_id STRING,text STRING,business_id STRING,full_address STRING,schools STRING,longitude STRING,average_stars DOUBLE,date DATE, user_id STRING,
+open STRING, categories STRING, photo_url STRING, city STRING, review_count DOUBLE, name STRING, neighborhoods STRING, url STRING, votescool STRING, votesfunny STRING, state STRING, stars DOUBLE, latitude STRING,
+type STRING,votesuseful STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+LOAD DATA local INPATH '/usr/lib/hue/input/business2.csv' INTO TABLE Business;
+
+CREATE TABLE IF NOT EXISTS NewBusiness (BUSINESS_ID STRING, FULL_ADDR STRING)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+INSERT OVERWRITE TABLE NewBusiness 
+SELECT business_id,full_address
+FROM Business;
+
+CREATE TABLE IF NOT EXISTS Review (review_id STRING,text STRING,business_id STRING,full_address STRING,schools STRING,longitude STRING,average_stars DOUBLE,date DATE, user_id STRING,
+open STRING, categories STRING, photo_url STRING, city STRING, review_count DOUBLE, name STRING, neighborhoods STRING, url STRING, votescool STRING, votesfunny STRING, state STRING, stars DOUBLE, latitude STRING,
+type STRING,votesuseful STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+LOAD DATA local INPATH '/usr/lib/hue/input/review2.csv' INTO TABLE Review;
+
+
+CREATE TABLE IF NOT EXISTS NewReview (BUSINESS_ID STRING, RATING FLOAT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+INSERT OVERWRITE TABLE NewReview 
+SELECT business_id,stars
+FROM Review;
+
+CREATE TABLE IF NOT EXISTS JoinBusRev (BUSINESS_ID STRING, RATING FLOAT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '^';
+
+INSERT OVERWRITE TABLE JoinBusRev
+SELECT NewBusiness.BUSINESS_ID, AVG(NewReview.RATING) avg_rating
+FROM NewBusiness JOIN NewReview ON (NewBusiness.BUSINESS_ID = NewReview.BUSINESS_ID)
+GROUP BY NewBusiness.BUSINESS_ID
+ORDER BY avg_rating DESC
+LIMIT 10;
+
+SELECT JoinBusRev.BUSINESS_ID, JoinBusRev.RATING, NewBusiness.FULL_ADDR
+FROM JoinBusRev JOIN NewBusiness ON (JoinBusRev.BUSINESS_ID = NewBusiness.BUSINESS_ID);

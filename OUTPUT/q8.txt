@@ -1,0 +1,81 @@
+D1_25rfl7k6vhTJc11OPoQ  Amherst, MA 01002       -72.4968189
+QeFNlXslDL3f-kfj5WmM4Q  Chapel Hill, NC 27515   -79.0540122986
+we-xtVt8oNuy6YIlRPd8nw  Carrboro Saxapahaw Chapel Hill Durham, NC 27516 -79.0558445
+cg2HYLX2ATtM8d4n6t9a8w  Kingston, NJ 08528      -74.6151551
+qgfodtoL8xwCESjgKwW79A  San Luis Obispo, CA     -120.6596156
+_gznrE5QoMJelH69U7v7cw  University Park, MD 20782       -76.943726
+ZKS_l_xMMkL-8hfiE-lXig  Champaign, IL 61820     -88.2412504
+JH9ZE5st5Z4WtOGe_i_BEg  San Luis Obispo, CA 93403       -120.66
+tADsj42EvCWRgQoZp5W7Wg  College Park, MD 20741  -76.9373
+2a-UIu0o_IpGCj_45IHBRA  West Lafayette, IN 47906        -86.915756
+ZlCSsWS07JulSBIQlrbF5w  Champaign, IL   -88.2433829
+L5GxxxW2kHXqbb9c6wA1ww  San Luis Obispo, CA 93403       -120.66
+mk0Hp0sLSG1aNG_lXT0Blg  Champaign, IL 61820     -88.2412504
+et0tmr3f3bdZIBfKOwCySQ  Blacksburg, VA 24060    -80.4139393
+8Ys7NYxwSXbnQvgnomUNTQ  West Lafayette, IN 47996        -86.8751
+xWGn7oqLOZu_00H8pZOtsQ  Urbana, IL      -88.2072697
+sv-yOSEionzcUzHifPtHXw  Lafayette, IN 47909     -86.8857861
+axPZazfSZFnynOV52mbe2Q  Stanford, CA    -122.1660756
+Ao7lyljfdSzZTIvat0dryA  Ithaca, NY 14850        -76.5018807
+4T7yBnAHJZD-1vTeD9WLyQ  San Luis Obispo, CA 93405       -120.6596156
+O490X1x1Rm_5AyUskalD2w  San Luis Obispo, CA     -120.6596156
+oQMA9FrrVQn0qjehVH05zw  Claremont, CA 91711     -117.7197785
+GN7Rlbs044Pi2mx0Cj-a5g  San Luis Obispo, CA 93401       -120.6596156
+cJnqZ42axqh9cwan2srvzw  San Luis Obispo, CA 93405       -120.658035278
+M6_uH4RizgCh1Ou9-4m9Nw  Lafayette, IN 47907     -86.91608
+lJJXxpq9P4gTnGy-JwBAbQ  San Luis Obispo, CA 93401       -120.6596156
+P9sTaK4GDtd8Q7IHTrH3kA  La Jolla, CA 92093      -117.2308668
+7rL2yM06fso0lcsx-xKtgA  San Luis Obispo, CA 93405       -120.6596156
+d_Uh4R6Rsh8_UDXwvuTpkA  San Luis Obispo, CA     -120.6596156
+Time taken: 0.191 seconds, Fetched: 29 row(s)
+OK
+SjFAUjXTbLZQKk6bgk36kA  Champaign, IL 61820     -88.2412504
+M-qZO33MIDgx9S9q9M4lBw  Claremont, CA 91711     -117.7197785
+CRwwQ3XweXewLPOceeHu_g  Annapolis, MD 20764     -76.9400446
+usNNgZYg18ucpqhOK9XeJQ  Cohoes, NY 12047        -73.7001187
+Q_KmjsAxmXEccFBvrsKN_g  Amherst, MA     -72.523143
+dazjs-4il07Qq5gf-hOleg  Carrboro, NC    -79.0752895
+GhViuGdDMbhIwj2JzC707w  Pasadena, CA 91125      -118.1261661
+TVd309_EA8KN1lgR9UuFlQ  San Luis Obispo, CA     -120.6596156
+ytC-k9WusC-H6VrjHt3vhA  Ann Arbor, MI   -83.733276
+4xdg-49HIJC_dgjPktuKaA  San Luis Obispo, CA 93406       -120.66
+1YW_208GTEtLuJeFTqQvlg  San Luis Obispo, CA     -120.6596156
+S506FIQdswKA0anIlQSF_g  Palo Alto, CA 94309     -122.17
+wfZmw9CA0f6dEGUz366jig  Princeton, NJ 08544     -74.678749
+UrzVmRtI0MBO2sQC_WdD4A  Philadelphia, PA 19127  -75.1831907269
+RY21kOFC_Dv8aOhG4LFBeQ  Ann Arbor, MI 48103     -83.733276
+nDer0ZOM-x8xTGlFybWViQ  San Luis Obispo, CA 93403       -120.66
+uPvM9by48kKU_070aZTioQ  Ithaca, NY 14850        -76.5018807
+eIDmHjFesf_mvhsc2Tm3gA  Princeton, NJ 08542     -74.660167
+HdAxMfAlzXtJpwZn52SNyg  Ann Arbor, MI 48103     -83.733276
+oaOhLSd0wLBh0TwDc4u1fg  Stanford, CA    -122.1660756
+JGsp7JvzBy6OxI9vIemQUg  Ithaca, NY 14850        -76.4966071
+6jVX-dD_YxkREYcsSF8fcQ  San Luis Obispo, CA 93401       -120.6596156
+xtqUd6rDqdhcgRFUlpaWKw  San Luis Obispo, CA 93403       -120.66
+A5-KK23sQLs80zSkk2ikMg  Claremont, CA 91711     -117.7197785
+4h_leULG3rWmfeYTTggswg  San Luis Obispo, CA 93405       -120.6596156
+Qxn26fUlD3e6QOgjt0T1nA  Stanford, CA 94305      -122.1660901
+EZ2WuBwn4UUMwpC6ox9Zyg  Carrboro, NC 27510      -79.0814523
+jWU6H2RVbLPmbML1cuYnDQ  Ithaca, NY      -76.5
+KnhamF4BxOD9tcGF1Pt9wQ  Claremont, CA 91711     -117.7197785
+Time taken: 0.181 seconds, Fetched: 29 row(s)
+OK
+jN8tFVrxvn_NyQhafHPEmg  Hyattsville, MD 20783   -76.971244812
+7QNzak_Hn1xqq2fcRFnljg  Blacksburg, VA 24061    -80.4340429
+7WproNY9yxW6p2R3gn6Euw  Champaign, IL 61820     -88.2412504
+NbHhvYX2yk8sNRsNR2wL6A  San Luis Obispo, CA     -120.6596156
+ItB4MzEK8bZae3FdmqZSsQ  Claremont, CA 91711     -117.7197785
+AbB1MOLe_qylcAoRZMe1UA  Mountain View, CA 94309 -122.17
+x93OG15S1uAkHknrTg5_Jw  Claremont, CA 91711     -117.7197785
+3J9sNtEsONIL-F2tQHfTUg  San Luis Obispo, CA     -120.6596156
+W_qugmWCqPjAhqgiDO1rPg  Ithaca, NY 14850        -76.5257007
+apSX0LOOOVH-W9EqpdoFmQ  Chapel Hill, NC 27515   -79.0563
+9rdigHXd49AKYopcG9-Mnw  Stanford, CA 94305      -122.163949
+38nA0fIJMCj2EoLpAcPj2Q  San Luis Obispo, CA     -120.6596156
+_r0Smq2oJAU4PYdsczk7XA  Troy, NY 12180  -73.6917851
+7R0qrKQbwkbRQNFGc5tDcQ  Palo Alto, CA 94309     -122.17
+rYkRvdxHDtRD7EddbIiFKg  Princeton, NJ 08544     -74.6561453
+c_yxtSZNaxXAekgAPNW0Cg  Ithaca, NY      -76.49167
+Syiv-lUfj0iScV4Aw9yWaA  Albany, NY 12198        -73.6418473
+XdZMqJbl-oWA_x0F_q5I_A  Princeton, NJ 08544     -74.6561453
+Time taken: 0.178 seconds, Fetched: 18 row(s)
