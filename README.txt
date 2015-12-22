@@ -23,3 +23,7 @@ PIG and HIVE are executed on hortonworks sandbox
 Cassandra is executed on UTD cluster
 commands for cassandra are given in q10 and q11 files.
 execute each command in interactive mode.
+
+Look here for implementation in 
+MapReduce -> https://github.com/csushma/BigData-Assignment1
+and Scala -> https://github.com/csushma/BigData-Assignment3
